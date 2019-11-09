@@ -27,13 +27,16 @@ axios.get(geoCodeUrl).then((response) => {
     }
     let lat = response.data.results[0].geometry.location.lat,
         lng = response.data.results[0].geometry.location.lng,
-        weatherUrl = `${url}/${accessKey}/${lat},${lng}`;
+        accessKey = process.env.WEATHER_API_KEY,
+        url = process.env.DARKSKY_WEATHER_URL;
+    weatherUrl = `${url}/${accessKey}/${lat},${lng}`;
     console.log(response.data.results[0].formatted_address);
     return axios.get(weatherUrl);
-}).then((res) => {
+}).then((response) => {
+    // console.log(response)
     let temperature = response.data.currently.temperature,
         apparentTemperature = response.data.currently.apparentTemperature;
-    console.log(`it's currentlly${temperature}. it feels like ${apparentTemperature}`)
+    console.log(`it's currently ${temperature}. it feels like ${apparentTemperature}`)
 }).catch((e) => {
     if (e === 'ENOTFOUND') {
         console.log(`Unable to connect to API servers`)

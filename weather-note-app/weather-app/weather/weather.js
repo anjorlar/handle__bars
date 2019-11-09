@@ -4,7 +4,6 @@ let getWeather = (lat, lng, callBack) => {
     let accessKey = process.env.WEATHER_API_KEY;
     let url = process.env.DARKSKY_WEATHER_URL
     request({
-        // url: `https://api.darksky.net/forecast/fff3b37c5005abe76e59403b7ca29965/36.7520521,-95.94105359999999`,
         url: `${url}/${accessKey}/${lat},${lng}`,
         json: true
     }, (error, response, body) => {
