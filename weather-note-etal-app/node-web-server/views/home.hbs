@@ -9,11 +9,9 @@
 </head>
 
 <body>
-    <h1> {{pageHeader}}</h1>
-    <P>this is the home page for training</P>
-    <footer>
-        <p> page {{content}}</p>
-    </footer>
+    {{> header}}
+    <P>{{screamIt pageTitle}}</P>
+    {{> footer}}
 </body>
 
 </html>
