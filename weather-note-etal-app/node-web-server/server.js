@@ -58,6 +58,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: `This is the project page`,
+        content: `20`
+    });
+});
 app.get('/bad', (req, res) => {
     res.send({
         error: `path not found`
