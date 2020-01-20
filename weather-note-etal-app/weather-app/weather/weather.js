@@ -18,7 +18,7 @@ let getWeather = (lat, lng, callBack) => {
         } else {
             callBack("unable to fetch weather")
             // console.log("unable to fetch weather")
-        }
+        };
     })
 }
 

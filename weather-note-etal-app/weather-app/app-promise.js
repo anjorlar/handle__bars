@@ -24,7 +24,7 @@ let geoCodeUrl = `${url}${encodedAddress}&key=${accessKey}`;
 axios.get(geoCodeUrl).then((response) => {
     if (response.data.status === 'ZERO_RESULTS') {
         throw new Error('unable to find that address');
-    }
+    };
     let lat = response.data.results[0].geometry.location.lat,
         lng = response.data.results[0].geometry.location.lng,
         accessKey = process.env.WEATHER_API_KEY,
