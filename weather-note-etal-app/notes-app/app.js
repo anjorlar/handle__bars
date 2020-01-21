@@ -49,7 +49,7 @@ if (command === 'add') {
     if (note) {
         notes.logNote(note)
     } else {
-        console.log(`note not found`)
+        console.log(`note not found`);
     }
 } else if (command === 'remove') {
     let noteRemoved = notes.removeNote(argv.title);
