@@ -5,7 +5,7 @@ let fetchNotes = () => {
         let notesString = fs.readFileSync('notes-data.json');
         return JSON.parse(notesString);
     } catch (err) {
-        console.log(err)
+        console.log(err);
         return [];
     }
 };
