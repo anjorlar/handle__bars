@@ -33,7 +33,6 @@ axios.get(geoCodeUrl).then((response) => {
     console.log(response.data.results[0].formatted_address);
     return axios.get(weatherUrl);
 }).then((response) => {
-    // console.log(response)
     let temperature = response.data.currently.temperature,
         apparentTemperature = response.data.currently.apparentTemperature;
     console.log(`it's currently ${temperature}. it feels like ${apparentTemperature}`)

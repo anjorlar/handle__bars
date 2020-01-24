@@ -19,7 +19,7 @@ let geoCodeAddress = (address, callback) => {
                 latitude: body.results[0].geometry.location.lat,
                 longitude: body.results[0].geometry.location.lng
             })
-        }
+        };
     });
 };
 
