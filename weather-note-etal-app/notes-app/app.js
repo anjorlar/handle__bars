@@ -47,7 +47,7 @@ if (command === 'add') {
 } else if (command === 'read') {
     let note = notes.readNote(argv.title)
     if (note) {
-        notes.logNote(note)
+        notes.logNote(note);
     } else {
         console.log(`note not found`);
     }

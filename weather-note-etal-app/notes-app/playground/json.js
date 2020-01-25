@@ -16,7 +16,7 @@ const fs = require('fs');
 let originalNote = {
     title: 'some title',
     body: 'some body'
-}
+};
 let originalNoteString = JSON.stringify(originalNote);
 
 fs.writeFileSync("note.json", originalNoteString);
