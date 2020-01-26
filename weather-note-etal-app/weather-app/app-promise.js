@@ -40,6 +40,6 @@ axios.get(geoCodeUrl).then((response) => {
     if (e === 'ENOTFOUND') {
         console.log(`Unable to connect to API servers`)
     } else {
-        console.log(e.message)
+        console.log(e.message);
     }
 });
