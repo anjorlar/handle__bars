@@ -12,7 +12,7 @@ let geoCodeAddress = (address, callback) => {
         if (error) {
             callback('unable to connect to google servers')
         } else if (body.status === 'ZERO_RESULTS') {
-            callback('unable to find address')
+            callback('unable to find address');
         } else if (body.status === 'OK') {
             callback(undefined, {
                 address: body.results[0].formatted_address,
