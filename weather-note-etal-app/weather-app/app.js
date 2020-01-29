@@ -22,7 +22,7 @@ geoCode.geoCodeAddress(argv.address, (errorMessage, result) => {
         console.log(result.address);
         weather.getWeather(result.latitude, result.longitude, (errorMessage, results) => {
             if (errorMessage) {
-                console.log(errorMessage)
+                console.log(errorMessage);
             } else {
                 console.log(`It's currently ${results.temperature}, it's going to be ${results.dailyReports}`);
             }
