@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
     res.render('home.hbs', {
         pageTitle: 'WELCOME TO THE HOMEPAGE',
         content: `20`
-    })
+    });
 })
 
 app.get('/about', (req, res) => {
