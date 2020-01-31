@@ -45,7 +45,7 @@ if (command === 'add') {
     console.log(`Printing ${allNotes.length} notes`);
     allNotes.forEach((note) => notes.logNote(note));
 } else if (command === 'read') {
-    let note = notes.readNote(argv.title)
+    let note = notes.readNote(argv.title);
     if (note) {
         notes.logNote(note);
     } else {
