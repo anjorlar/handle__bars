@@ -5,4 +5,4 @@ let person = {
 person.age = 25;
 person.name = 'mike'
 
-console.log(person)
+console.log(person);
