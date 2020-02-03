@@ -68,7 +68,7 @@ app.get('/bad', (req, res) => {
     res.send({
         error: `path not found`
     });
-})
+});
 
 const port = process.env.PORT;
 
