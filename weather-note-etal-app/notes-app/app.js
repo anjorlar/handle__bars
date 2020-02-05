@@ -38,7 +38,7 @@ if (command === 'add') {
         console.log('note creation successful');
         notes.logNote(note)
     } else {
-        console.log('title taken')
+        console.log('title taken');
     }
 } else if (command === 'list') {
     let allNotes = notes.getAll();
