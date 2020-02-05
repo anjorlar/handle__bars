@@ -73,5 +73,5 @@ app.get('/bad', (req, res) => {
 const port = process.env.PORT;
 
 app.listen(port, () => {
-    console.log(`listening on port ${port}`)
+    console.log(`listening on port ${port}`);
 });
