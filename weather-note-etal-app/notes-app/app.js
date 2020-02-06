@@ -58,4 +58,4 @@ if (command === 'add') {
 }
 else {
     console.log('command not recognised');
-}
+};
