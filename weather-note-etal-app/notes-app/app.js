@@ -36,7 +36,7 @@ if (command === 'add') {
     let note = notes.addNote(argv.title, argv.body);
     if (note) {
         console.log('note creation successful');
-        notes.logNote(note)
+        notes.logNote(note);
     } else {
         console.log('title taken');
     }
