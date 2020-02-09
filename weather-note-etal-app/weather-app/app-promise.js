@@ -41,5 +41,5 @@ axios.get(geoCodeUrl).then((response) => {
         console.log(`Unable to connect to API servers`);
     } else {
         console.log(e.message);
-    }
+    };
 });

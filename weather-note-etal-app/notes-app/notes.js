@@ -12,7 +12,7 @@ let fetchNotes = () => {
 
 let saveNotes = (notes) => {
     fs.writeFileSync('notes-data.json', JSON.stringify(notes))
-}
+};
 
 let addNote = (title, body) => {
     let notes = fetchNotes();
