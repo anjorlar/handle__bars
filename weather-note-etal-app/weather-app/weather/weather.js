@@ -20,6 +20,6 @@ let getWeather = (lat, lng, callBack) => {
             // console.log("unable to fetch weather")
         };
     })
-}
+};
 
 module.exports.getWeather = getWeather;
