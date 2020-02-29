@@ -16,7 +16,7 @@ let getWeather = (lat, lng, callBack) => {
             })
             // console.log(body.currently.temperature)
         } else {
-            callBack("unable to fetch weather")
+            callBack("unable to fetch weather");
             // console.log("unable to fetch weather")
         };
     })
