@@ -25,8 +25,8 @@ geoCode.geoCodeAddress(argv.address, (errorMessage, result) => {
                 console.log(errorMessage);
             } else {
                 console.log(`It's currently ${results.temperature}, it's going to be ${results.dailyReports}`);
-            }
-        })
+            };
+        });
         // console.log(JSON.stringify(result, undefined, 2))
     }
 });
