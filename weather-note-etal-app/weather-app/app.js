@@ -28,5 +28,5 @@ geoCode.geoCodeAddress(argv.address, (errorMessage, result) => {
             };
         });
         // console.log(JSON.stringify(result, undefined, 2))
-    }
+    };
 });

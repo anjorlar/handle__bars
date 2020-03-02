@@ -27,4 +27,4 @@ let asyncCode = (address) => {
 
 asyncCode('unilag').then((res) => {
     console.log(JSON.stringify(res, undefined, 2))
-}).catch(e => console.log(e))
+}).catch(e => console.log(e));
