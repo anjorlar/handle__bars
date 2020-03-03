@@ -29,7 +29,7 @@ let addNote = (title, body) => {
 };
 
 let getAll = () => {
-    return fetchNotes()
+    return fetchNotes();
 };
 
 let readNote = (title) => {

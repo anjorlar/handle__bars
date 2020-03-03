@@ -18,7 +18,7 @@ let asyncCode = (address) => {
                 })
                 // console.log(body.currently.temperature)
             } else {
-                reject("unable to fetch weather")
+                reject("unable to fetch weather");
                 // console.log("unable to fetch weather")
             }
         })
